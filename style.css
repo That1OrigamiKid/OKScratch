@@ -1,5 +1,5 @@
 html {height: 100%; width: 100%;}
-@font-face {font-family: okfont; src: url('fonts/Okfont-Regular.ttf');} 
+@font-face {font-family: okfont; src: url('Okfont-Regular.tff');} 
   h1 {font-family: okfont}
   h2 {font-family: okfont}
   a {font-family: okfont}
