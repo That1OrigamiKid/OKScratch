@@ -1,6 +1,4 @@
-console.log("your mother")
-
-// Function to toggle theme
+// Function to toggle theme menu
 document.querySelector(".theme-button").addEventListener("click", function() {
     document.querySelector(".theme-menu").classList.toggle("show");
   });

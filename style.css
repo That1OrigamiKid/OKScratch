@@ -83,3 +83,11 @@ body[data-theme='auto'] {
 .centeraligned {
   text-align: center;
 }
+
+/* Dropdown Button Styling */
+.theme-dropdown {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  z-index:
