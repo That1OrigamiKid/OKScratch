@@ -1,0 +1,60 @@
+html {
+  height: 100%; width: 100%;
+}
+@font-face {font-family: okfont; src: url('https://that1origamikid.github.io/OKConstruct/Okfont-Regular.ttf');} 
+  h1 {
+    font-family: okfont
+  }
+  h2 {
+    font-family: okfont
+  }
+  h3 {
+    font-family: okfont
+  }
+  a {
+    font-family: okfont
+  }
+  p {
+    font-family: okfont
+  }
+  button {
+    font-family: okfont
+  }
+a {
+  color:#ff5733
+}
+h1 {
+  color:dodgerblue
+}
+h2 {
+  color:steelblue
+}
+h3 {
+  color: salmon
+}
+#body {
+  background-image: url('background.png'); /* Replace with your image path */
+  background-repeat: repeat; /* Ensures the image tiles */
+  background-color:black
+}
+body {
+  background-color: #1a1a1a; /* Fallback */
+  background-image: url('dark-background.png'); /* Default (light mode) */
+  background-repeat: repeat;
+}
+
+/* light mode */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f0f0f0 ;
+      background-image: url('light-background.png');
+
+  }
+}
+
+p {
+  color:white
+}
+.centeraligned {
+  text-align: center;
+}

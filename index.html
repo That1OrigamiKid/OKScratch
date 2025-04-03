@@ -1,101 +1,50 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://that1origamikid.github.io/OKConstruct/style.css">
-    <title>OrigamiKid Scratch Games</title>
-    <link rel="icon" type="image/x-icon" href="https://that1origamikid.github.io/OKConstruct/favicon.png">
-  </head>
-  <body>
-    <div class="centeraligned">
-      <img src="photos/profile.png" width="200" height="200">
-      <h1>My Scratch Games</h1>
-      
-      <a href="mygames/screensaver/game.html">Screen Saver 📱</a><br>
-      <a href="mygames/jumpycat/game.html">Jumpy Cat 📱</a><br>
-      <a href="mygames/tanks!!!!!/game.html">TANKS!!!!!</a><br>
-      <a href="mygames/soundboardbuttons/game.html">Soundboard Buttons 📱</a><br>
-      <a href="mygames/spaceshooter/computerormobile.html">Space Shooter 📱</a><br>
-      <a href="mygames/drawingcanvas/game.html">Drawing Canvas 📱</a>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://that1origamikid.github.io/OKConstruct/style.css">
+  <title>OrigamiKid Scratch Games</title>
+  <link rel="icon" type="image/x-icon" href="https://that1origamikid.github.io/OKConstruct/favicon.png">
+</head>
+<body data-theme="auto">
+  <div class="centeraligned">
+    <img src="photos/profile.png" width="200" height="200">
+    <h1>My Scratch Games</h1>
+    <a href="mygames/screensaver/game.html">Screen Saver 📱</a><br>
+    <a href="mygames/jumpycat/game.html">Jumpy Cat 📱</a><br>
+    <a href="mygames/tanks!!!!!/game.html">TANKS!!!!!</a><br>
+    <a href="mygames/soundboardbuttons/game.html">Soundboard Buttons 📱</a><br>
+    <a href="mygames/spaceshooter/computerormobile.html">Space Shooter 📱</a><br>
+    <a href="mygames/drawingcanvas/game.html">Drawing Canvas 📱</a>
 
-      <h2>Other Things That Arent Mine</h2>
-      <a href="othergames/minecraft/game.html">Minecraft</a><br>
-      <a href="othergames/classicminecraft/game.html">Classic Minecraft</a><br>
-      <a href="othergames/gettingoverit/game.html">Getting Over it Scratch Version 📱</a><br>
-      <a href="othergames/paperminecraft/game.html">Paper Minecraft</a><br>
-      <a href="othergames/geometrydash/game.html">Geometry Dash📱</a><br>
-      <a href="othergames/retrobowl/game.html">Retro Bowl 📱</a><br>
-      <a href="othergames/slope/game.html">Slope</a><br>
-      <a href="othergames/getawayshootout/game.html">Getaway Shootout</a><br>
-      <a href="othergames/!panic!/game.html">! PANIC !</a><br>
-      <a href="othergames/incredibox/versions.html">Incredibox</a><br>
-      <a href="othergames/driftboss/game.html">Drift Boss</a><br>
-      <a href="othergames/1v1-lol/game.html">1v1 .lol</a>
+    <h2>Other Things That Arent Mine</h2>
+    <a href="othergames/minecraft/game.html">Minecraft</a><br>
+    <a href="othergames/classicminecraft/game.html">Classic Minecraft</a><br>
+    <a href="othergames/gettingoverit/game.html">Getting Over it Scratch Version 📱</a><br>
+    <a href="othergames/paperminecraft/game.html">Paper Minecraft</a><br>
+    <a href="othergames/geometrydash/game.html">Geometry Dash📱</a><br>
+    <a href="othergames/retrobowl/game.html">Retro Bowl 📱</a><br>
+    <a href="othergames/slope/game.html">Slope</a><br>
+    <a href="othergames/getawayshootout/game.html">Getaway Shootout</a><br>
+    <a href="othergames/!panic!/game.html">! PANIC !</a><br>
+    <a href="othergames/incredibox/versions.html">Incredibox</a><br>
+    <a href="othergames/driftboss/game.html">Drift Boss</a><br>
+    <a href="othergames/1v1-lol/game.html">1v1 .lol</a>
 
-      <h2>Other Things</h2>
-      <a href="otherthings/qrcode/thing.html">QR Code Genorator</a><br>
-      <a href="otherthings/lol/thing.html">Disquised Rick Roll</a>
+    <h2>Other Things</h2>
+    <a href="otherthings/qrcode/thing.html">QR Code Genorator</a><br>
+    <a href="otherthings/lol/thing.html">Disquised Rick Roll</a>
+  </div>
+
+  <!-- Theme Toggle Dropdown -->
+  <div class="theme-dropdown">
+    <button class="theme-button">Theme ▾</button>
+    <div class="theme-menu">
+      <button onclick="setTheme('auto')">Auto</button>
+      <button onclick="setTheme('light')">Light</button>
+      <button onclick="setTheme('dark')">Dark</button>
     </div>
-    
-    <!-- Theme Toggle Dropdown -->
-    <div class="theme-dropdown">
-      <button class="theme-button">Theme ▾</button>
-      <div class="theme-menu">
-        <button onclick="setTheme('auto')">Auto</button>
-        <button onclick="setTheme('light')">Light</button>
-        <button onclick="setTheme('dark')">Dark</button>
-      </div>
-    </div>
-    
-    <script src="https://that1origamikid.github.io/OKConstruct/script.js"></script>
-    <script>
-      document.querySelector(".theme-button").addEventListener("click", function() {
-        document.querySelector(".theme-menu").classList.toggle("show");
-      });
-      
-      function setTheme(theme) {
-        localStorage.setItem("theme", theme);
-        applyTheme(theme);
-      }
-    </script>
-    <style>
-      .theme-dropdown {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        display: inline-block;
-      }
-      .theme-button {
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 8px 12px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .theme-menu {
-        display: none;
-        position: absolute;
-        right: 0;
-        background: rgba(0, 0, 0, 0.7);
-        border-radius: 5px;
-        overflow: hidden;
-      }
-      .theme-menu button {
-        display: block;
-        background: none;
-        border: none;
-        color: white;
-        padding: 8px 12px;
-        width: 100%;
-        text-align: left;
-        cursor: pointer;
-      }
-      .theme-menu button:hover {
-        background: rgba(255, 255, 255, 0.2);
-      }
-      .show {
-        display: block;
-      }
-    </style>
-  </body>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
 </html>

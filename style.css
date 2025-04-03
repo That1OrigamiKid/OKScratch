@@ -1,60 +1,85 @@
+/* Basic body setup */
 html {
-  height: 100%; width: 100%;
+  height: 100%;
+  width: 100%;
 }
-@font-face {font-family: okfont; src: url('https://that1origamikid.github.io/OKConstruct/Okfont-Regular.ttf');} 
-  h1 {
-    font-family: okfont
-  }
-  h2 {
-    font-family: okfont
-  }
-  h3 {
-    font-family: okfont
-  }
-  a {
-    font-family: okfont
-  }
-  p {
-    font-family: okfont
-  }
-  button {
-    font-family: okfont
-  }
-a {
-  color:#ff5733
+
+@font-face {
+  font-family: okfont;
+  src: url('https://that1origamikid.github.io/OKConstruct/Okfont-Regular.ttf');
 }
+
+/* Font settings for headings, links, paragraphs, and buttons */
 h1 {
-  color:dodgerblue
+  font-family: okfont;
+  color: dodgerblue;
 }
+
 h2 {
-  color:steelblue
+  font-family: okfont;
+  color: steelblue;
 }
+
 h3 {
-  color: salmon
-}
-#body {
-  background-image: url('background.png'); /* Replace with your image path */
-  background-repeat: repeat; /* Ensures the image tiles */
-  background-color:black
-}
-body {
-  background-color: #1a1a1a; /* Fallback */
-  background-image: url('dark-background.png'); /* Default (light mode) */
-  background-repeat: repeat;
+  font-family: okfont;
+  color: salmon;
 }
 
-/* light mode */
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #f0f0f0 ;
-      background-image: url('light-background.png');
-
-  }
+a {
+  font-family: okfont;
+  color: #ff5733;
 }
 
 p {
-  color:white
+  font-family: okfont;
+  color: white;
 }
+
+button {
+  font-family: okfont;
+}
+
+/* Background settings */
+#body {
+  background-image: url('background.png'); /* Replace with your image path */
+  background-repeat: repeat;
+  background-color: black;
+}
+
+/* Default body background for dark mode */
+body {
+  background-color: #1a1a1a; /* Fallback */
+  background-image: url('dark-background.png'); /* Default background for dark mode */
+  background-repeat: repeat;
+}
+
+/* Light mode styling */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f0f0f0;
+    background-image: url('light-background.png');
+  }
+}
+
+/* Theme switching logic */
+
+/* Default theme (based on system preference) */
+body[data-theme='dark'] {
+  background-color: #1a1a1a;
+  background-image: url('dark-background.png');
+}
+
+body[data-theme='light'] {
+  background-color: #f0f0f0;
+  background-image: url('light-background.png');
+}
+
+body[data-theme='auto'] {
+  background-color: #1a1a1a;
+  background-image: url('dark-background.png');
+}
+
+/* Center alignment for main content */
 .centeraligned {
   text-align: center;
 }
