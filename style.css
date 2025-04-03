@@ -32,11 +32,25 @@ h2 {
 h3 {
   color: salmon
 }
-body {
+#body {
   background-image: url('background.png'); /* Replace with your image path */
   background-repeat: repeat; /* Ensures the image tiles */
   background-color:black
 }
+body {
+  background-image: url('dark-background.png'); /* Default (light mode) */
+  background-repeat: repeat;
+  background-color: #1a1a1a; /* Fallback */
+}
+
+/* light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-image: url('light-background.png');
+      background-color: #f0f0f0 ;
+  }
+}
+
 p {
   color:white
 }
