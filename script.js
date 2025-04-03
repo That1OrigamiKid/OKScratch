@@ -1,5 +1,3 @@
-console.log("Dein Mutter")
-
 // Toggle the dropdown visibility when the theme button is clicked
 document.querySelector(".theme-button").addEventListener("click", function() {
     document.querySelector(".theme-menu").classList.toggle("show");

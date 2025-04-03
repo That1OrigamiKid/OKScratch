@@ -66,7 +66,7 @@ body {
 }
 
 .theme-menu {
-  display: none;
+  display: none; /* Initially hidden */
   position: absolute;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
@@ -90,7 +90,7 @@ body {
 }
 
 .show {
-  display: block;
+  display: block; /* Show the menu when this class is added */
 }
 
 p {
