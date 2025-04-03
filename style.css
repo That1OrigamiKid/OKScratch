@@ -38,16 +38,17 @@ h3 {
   background-color:black
 }
 body {
+  background-color: #1a1a1a; /* Fallback */
   background-image: url('dark-background.png'); /* Default (light mode) */
   background-repeat: repeat;
-  background-color: #1a1a1a; /* Fallback */
 }
 
 /* light mode */
 @media (prefers-color-scheme: light) {
   body {
+    background-color: #f0f0f0 ;
       background-image: url('light-background.png');
-      background-color: #f0f0f0 ;
+
   }
 }
 
