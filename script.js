@@ -15,21 +15,21 @@ function setTheme(theme) {
     if (theme === "light") {
       document.body.style.backgroundColor = "#f0f0f0";
       document.body.style.backgroundImage = "url('light-background.png')";
-      profileImg.src = "/photos/light-profile.png";  // Switch to light profile image
+      profileImg.src = "/photos/profile-dark.png";  // Switch to light profile image
     } else if (theme === "dark") {
       document.body.style.backgroundColor = "#1a1a1a";
       document.body.style.backgroundImage = "url('dark-background.png')";
-      profileImg.src = "/photos/dark-profile.png";  // Switch to dark profile image
+      profileImg.src = "/photos/profile-light.png";  // Switch to dark profile image
     } else {
       const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
       if (prefersLight) {
         document.body.style.backgroundColor = "#f0f0f0";
         document.body.style.backgroundImage = "url('light-background.png')";
-        profileImg.src = "/photos/light-profile.png";  // Default to light profile image
+        profileImg.src = "/photos/profile-dark.png";  // Default to light profile image
       } else {
         document.body.style.backgroundColor = "#1a1a1a";
         document.body.style.backgroundImage = "url('dark-background.png')";
-        profileImg.src = "/photos/dark-profile.png";  // Default to dark profile image
+        profileImg.src = "/photos/profile-light.png";  // Default to dark profile image
       }
     }
   }
