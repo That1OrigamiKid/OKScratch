@@ -1,3 +1,5 @@
+console.log("Dein Mutter")
+
 // Toggle the dropdown visibility when the theme button is clicked
 document.querySelector(".theme-button").addEventListener("click", function(event) {
     event.stopPropagation(); // Prevents the click event from bubbling up to the document
