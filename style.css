@@ -33,6 +33,8 @@ h3 {
   color: salmon
 }
 body {
+  background-image: url('background.png'); /* Replace with your image path */
+  background-repeat: repeat; /* Ensures the image tiles */
   background-color:black
 }
 p {
