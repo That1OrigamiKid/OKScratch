@@ -38,7 +38,7 @@ h3 {
   background-color:black
 }
 body {
-  background-color: #1a1a1f; /* Fallback */
+  background-color: #1a1a1a; /* Fallback */
   background-image: url('dark-background.png'); /* Default (light mode) */
   background-repeat: repeat;
 }
