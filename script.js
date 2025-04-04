@@ -34,24 +34,24 @@ function applyTheme(theme) {
 
   if (theme === "light") {
     document.body.style.backgroundColor = "#f0f0f0";
-    document.body.style.backgroundImage = "url('light-background.png')";
+    document.body.style.backgroundImage = "url('/photos/light-background.png')";
     profileImg.src = "photos/profile-dark.png";  // Switch to light profile image
     console.log("Changed to light theme. Profile image: profile-light.png"); // Debugging
   } else if (theme === "dark") {
     document.body.style.backgroundColor = "#1a1a1a";
-    document.body.style.backgroundImage = "url('dark-background.png')";
+    document.body.style.backgroundImage = "url('/photos/dark-background.png')";
     profileImg.src = "photos/profile-light.png";  // Switch to dark profile image
     console.log("Changed to dark theme. Profile image: profile-dark.png"); // Debugging
   } else {
     const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
     if (prefersLight) {
       document.body.style.backgroundColor = "#f0f0f0";
-      document.body.style.backgroundImage = "url('light-background.png')";
+      document.body.style.backgroundImage = "url('/photos/light-background.png')";
       profileImg.src = "photos/profile-dark.png";  // Default to light profile image
       console.log("Defaulting to light theme. Profile image: profile-light.png"); // Debugging
     } else {
       document.body.style.backgroundColor = "#1a1a1a";
-      document.body.style.backgroundImage = "url('dark-background.png')";
+      document.body.style.backgroundImage = "url('/photos/dark-background.png')";
       profileImg.src = "photos/profile-light.png";  // Default to dark profile image
       console.log("Defaulting to dark theme. Profile image: profile-dark.png"); // Debugging
     }
