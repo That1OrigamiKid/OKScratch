@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/x-icon" href="https://that1origamikid.github.io/OKConstruct/favicon.png">
+    <title>! PANIC !</title>
+  </head>
+  <body>
+    <div class="centeraligned">
+      <h1>! PANIC !</h1>
+      <div class="game-container">
+        <iframe 
+            id="game-frame"
+            src="https://yourgamehost.com/game/index.html" 
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+        <br>
+        <button id="fullscreen-btn">Go Fullscreen</button>
+    </div>
+    
+      <br>
+      <a href="https://that1origamikid.github.io/OKConstruct/"><big>Homepage</big></a>
+      <div class="theme-dropdown">
+        <button class="theme-button">Theme ▾</button>
+        <div class="theme-menu">
+          <button onclick="setTheme('auto')">Auto</button>
+          <button onclick="setTheme('light')">Light</button>
+          <button onclick="setTheme('dark')">Dark</button>
+        </div>
+      </div>
+  
+      <!-- Linking to External JS file -->
+      <script src="../../script.js"></script>
+    </div>
+  </body>
+</html>
